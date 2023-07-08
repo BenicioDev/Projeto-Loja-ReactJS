@@ -5,6 +5,8 @@
   max-width: 50rem;
   justify-content: space-between; /*Elementos em lados opostos*/
   box-shadow: 0 1px 0 rgba(0,0,0,0.4);
+  gap: 13px;
+  padding-right: 13px;
 }
 
 .search-input{
@@ -14,24 +16,48 @@
   flex-grow: 1;
   font-weight: 50rem;
   font-size: 1rem;
+  border-right: 1px solid #ddd;
 }
 
-.search-button{}
+.search-button{
+ background: none;
+ border: none;
+ font-size: 1.4rem;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ color: white;
 
-@media (max-width: 360px){
+}
+
+@media (max-width: 600px){
  .search-bar-main{
   display: flex;
   width: 100%;
   max-width: 50rem;
   justify-content: space-between;
+  
  }
 
  .search-input{
+  display: inline;
   outline: none;
   border: none;
   padding: 7px;
   flex-grow: 1;
   font-weight: 50rem;
-  font-size: 14px;
+  font-size: 12px;
 }
+
+.search-button{
+  background: none;
+  border: none;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+ 
+ }
+
 }
