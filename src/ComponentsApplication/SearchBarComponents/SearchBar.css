@@ -7,6 +7,7 @@
   box-shadow: 0 1px 0 rgba(0,0,0,0.4);
   gap: 13px;
   padding-right: 13px;
+  border-radius: 0.3rem;
 }
 
 .search-input{
@@ -17,6 +18,7 @@
   font-weight: 50rem;
   font-size: 1rem;
   border-right: 1px solid #ddd;
+  
 }
 
 .search-button{

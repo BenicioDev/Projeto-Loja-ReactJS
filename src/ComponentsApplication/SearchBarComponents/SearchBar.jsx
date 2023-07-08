@@ -16,9 +16,9 @@ function SearchBar () {
         placeholder="Está procurando algo específico?" 
         className="search-input"
         onChange = {({target}) => setValue(target.value)}
+        value={getValue}
         required
       />
-      { getValue }
       <button type="submit" className="search-button">
         <GrFormSearch/>
       </button>
