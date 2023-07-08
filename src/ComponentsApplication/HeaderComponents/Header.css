@@ -6,7 +6,9 @@
 
 .header div{ /*div header style global*/
   display: flex;
-  justify-content: space-between;
+ justify-content: space-between; 
   align-items: center;
   padding: 1.5rem;
 }
+
+
