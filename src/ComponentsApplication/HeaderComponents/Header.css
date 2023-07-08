@@ -1,0 +1,12 @@
+.header{
+  background-color: rgb(200, 200, 200);
+  position: fixed; /*Header Scrool*/
+  width: 100%;
+}
+
+.header div{ /*div header style global*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
