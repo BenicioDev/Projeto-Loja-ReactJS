@@ -1,8 +1,8 @@
-const products = async (query) => {
+const ProductsAPI = async (query) => {
   const resposta = await fetch(`https://api.mercadolibre.com/sites/MLB/search?q=${query}`);
   const data = await resposta.json();
 
   return data.results;
 };
 
-export default products;
+export default ProductsAPI;
