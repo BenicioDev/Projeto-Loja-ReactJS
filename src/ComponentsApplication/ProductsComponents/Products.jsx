@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Products.css";
 import ProductsAPI from "../../ApiProducts/ProductsAPI";
+import ProductCard from "../CardProductsApplication/ProductCard";
 
 
 function Products() {
@@ -11,6 +12,7 @@ function Products() {
    
     ProductsAPI("guitarra").then((resposta) => {
       setProducts(resposta);
+      
     });
 
   }, []);
@@ -19,7 +21,9 @@ function Products() {
   return (  
     <section className="products container">
       {
-        products.map((product) => <p key={product.title}>{product.title}</p>)
+        products.map((product) =>
+          <ProductCard key={product.id} 
+            data={product} />)
       }
     </section>
   );
