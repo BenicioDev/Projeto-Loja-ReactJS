@@ -13,11 +13,11 @@ function ProductCard({data}) {
   return ( 
     <section className='product-card'>
 
-      <img src={thumbnail} 
+      <img src={thumbnail.replace(/\w\.jpg/gi, "W.jpg")}  
         alt="product" className="img-card" />
 
       <div className="info-card">
-        <h2 className="preco">R$ {price}</h2>
+        <h2 className="preco">{price.toLocaleString("pt-br",{style: "currency",currency: "BRL"})}</h2>
         <h2 className="titulo">{title}</h2>  {/* OBS */}
       </div>
 
