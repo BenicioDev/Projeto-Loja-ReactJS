@@ -17,7 +17,7 @@ function CartItemApp({data}) {
 
       <div className="cart-item-content">
         <h3 className="cart-item-title">{title}</h3>
-        <h3 className="cart-item-price">R${price}</h3>
+        <h3 className="cart-item-price">{price.toLocaleString("pt-br",{style: "currency",currency: "BRL"})}</h3>
 
         <button 
           type="button"
