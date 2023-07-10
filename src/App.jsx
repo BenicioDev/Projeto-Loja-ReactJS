@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./ComponentsApplication/HeaderComponents/Header";
 import Products from "./ComponentsApplication/ProductsComponents/Products";
 import Prov from "./context/Prov";
-import CartPageApp from "./CartPageApp/CartPageApp";
+import CartPageApp from "./ComponentsApplication/CartPageApp/CartPageApp";
 
 
 function App() {

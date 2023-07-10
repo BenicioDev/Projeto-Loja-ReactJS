@@ -5,9 +5,13 @@ import propTypes from "prop-types";
 function Prov({children}) { /*Componente informacoes*/
 
   const [products, setProducts] = useState([]);
+  const [cartItems, setCartItems] = useState([]);
 
   const val = {
-    products, setProducts
+    products, 
+    setProducts,
+    cartItems, 
+    setCartItems
   };
 
 
