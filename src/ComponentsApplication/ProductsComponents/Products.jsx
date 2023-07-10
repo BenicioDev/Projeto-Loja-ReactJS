@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useContext } from "react";
 import "./Products.css";
 import ProductsAPI from "../../ApiProducts/ProductsAPI";
 import ProductCard from "../CardProductsApplication/ProductCard";
+import ContxApplication from "../../context/ContxApplication";
 
 
 function Products() {
 
-  const [products, setProducts] = useState([]);
+  const {products, setProducts} = useContext(ContxApplication);
 
   useEffect(() => {
    
