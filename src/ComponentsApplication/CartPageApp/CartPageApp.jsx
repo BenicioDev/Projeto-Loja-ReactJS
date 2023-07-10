@@ -5,7 +5,7 @@ import ContxApplication from "../../context/ContxApplication";
 
 function CartPageApp() {
 
-  const { cartItems } = useContext(ContxApplication);
+  const { cartItems, isCartVisible } = useContext(ContxApplication);
 
   /*Soma total*/
   const TOTAL = cartItems.reduce((acc, item) => {
@@ -13,7 +13,7 @@ function CartPageApp() {
   }, 0);
 
   return (  
-    <section className="Cart">
+    <section className={`Cart ${isCartVisible ? "cart-act" : ""}`}>
       <div className="Cart-Items">
         {cartItems.map((cartItem) => <CartItemApp key={cartItem.id}  data={cartItem}  />)}  
       </div>

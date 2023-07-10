@@ -12,6 +12,7 @@
   transition: all .6s ease;
   cursor: pointer;
   position: relative;
+  border-radius: 0.8rem;
 }
 
 .cart-main:hover {

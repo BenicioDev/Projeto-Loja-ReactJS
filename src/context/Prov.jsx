@@ -6,12 +6,18 @@ function Prov({children}) { /*Componente informacoes*/
 
   const [products, setProducts] = useState([]);
   const [cartItems, setCartItems] = useState([]);
+  const [isCartVisible, setIsCartVisible] = useState(false);
+
+
 
   const val = {
     products, 
     setProducts,
     cartItems, 
-    setCartItems
+    setCartItems,
+    isCartVisible,
+    setIsCartVisible
+  
   };
 
 

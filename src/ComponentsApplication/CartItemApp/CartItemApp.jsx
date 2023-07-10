@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import propTypes from "prop-types";
 import { BsCartDashFill } from "react-icons/bs";
 import "./CartItemApp.css";
+import ContxApplication from "../../context/ContxApplication";
 
 function CartItemApp({data}) {
 
-  const {thumbnail, title, price} = data;
+  const {cartItems, setCartItems} = useContext(ContxApplication);
+
+  const {id, thumbnail, title, price} = data;
+
+  const handleRemoveItem = () => {
+    const updatedItems = cartItems.filter((item) => item.id != id);
+    setCartItems(updatedItems);
+  };
 
 
   return (  
@@ -21,7 +29,9 @@ function CartItemApp({data}) {
 
         <button 
           type="button"
-          className="button-remove">
+          className="button-remove"
+          onClick={handleRemoveItem}
+        >
           <BsCartDashFill/>
         </button>
       </div>  
